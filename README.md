@@ -10,6 +10,8 @@ dotnet publish -p:PublishProfile=DefaultContainer -p:ContainerFamily=noble-chise
 dotnet publish -p:PublishProfile=DefaultContainer -p:ContainerFamily=noble-chiseled -p:PublishTrimmed=true --sc
 ```
 
+docker run --rm -it -p 8080:8080 -e ASPNETCORE_HTTP_PORTS=8080 pdebruin/asp9
+
 Sources: 
 
 [dotnet-docker repo](https://github.com/dotnet/dotnet-docker/tree/main/samples/aspnetapp)
